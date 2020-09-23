@@ -9,7 +9,7 @@ Vendedor|Cadeia de caracteres|Nome do Vendedor
 Cliente |Cadeia de caracteres|Nome do Cliente
 Tipo_De_Imovel|Cadeia de caracteres|Tipo de imovel
 Condominio|Booleano|Caso o imovel esteja em um condominio
-Contruida|Booleano|Se casa foi ou não construida
+Construido|Booleano|Se o imovel foi ou não construida
 Vendida|Booleano|Campo para armazenar para ver se a casa ja foi vendida
 Ano_Contrucao|Inteiro|Ano que a casa foi construida ou tera sua construcão terminada
 Reformada|Booleano|Se a casa foi ou nao reformada
