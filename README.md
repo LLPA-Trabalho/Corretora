@@ -18,4 +18,3 @@ Bairro  |Cadeia de caracteres|Bairro do imovel
 Rua|Cadeia de caracteres|A rua do imovel
 Condominio_Valor|Real|Valor Condominio
 Valor|Real|Valor da casa
-teste
