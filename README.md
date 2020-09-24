@@ -7,7 +7,6 @@ Nosso trabalho tem a função de ser um sistema para uma corretora de imóveis, 
 |-------------|----|---------|
 Vendedor|Cadeia de caracteres|Nome do Vendedor
 Cliente |Cadeia de caracteres|Nome do Cliente
-Imovel|Struct|Estrutura do imovel
 Id|Inteiro|Identificação do imovel 
 Tipo_De_Imovel|Cadeia de caracteres|Tipo de imóvel
 Condominio|Booleano|Caso o imóvel esteja em um condominio
