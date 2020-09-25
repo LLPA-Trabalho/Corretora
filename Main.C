@@ -15,23 +15,23 @@ int main()
         printf("Digite o nome do vendedor\n");
         gets(vendedor);
 
-        puts("\nDigite o nome do comprador");
+        printf("\nDigite o nome do comprador");
 
         gets(cliente);
 
-        puts("\nDigite o tipo de imovel\n Apartamento ou Casa");
+        printf("\nDigite o tipo de imovel\n Apartamento ou Casa");
 
         gets(tipo_De_Imovel);
 
-        puts("\nDigite o bairro do imovel");
+        printf("\nDigite o bairro do imovel");
 
         gets(bairro);
 
-        puts("\nDigite a rua do imovel");
+        printf("\nDigite a rua do imovel");
 
         gets(rua);
 
-        puts("\nO Imovel ja foi construido ?\n 0 para sim e 1 para nao");
+        printf("\nO Imovel ja foi construido ?\n 0 para sim e 1 para nao");
 
         scanf("%d",&construido);
 
