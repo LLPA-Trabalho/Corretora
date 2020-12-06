@@ -19,3 +19,4 @@ Bairro  |Cadeia de caracteres|Bairro do imóvel
 Rua|Cadeia de caracteres|A rua do imóvel
 Condominio_Valor|Real|Valor Condominio
 Valor|Real|Valor do imóvel
+Imovel|Struct|Estrutura do imovel
