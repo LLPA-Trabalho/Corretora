@@ -2,7 +2,7 @@
 Nosso trabalho tem a função de ser um sistema para uma corretora de imóveis, aonde conseguiremos armazenar quem vendeu, e quem comprou e outras informações
 
 
-# Variáveis que estão sendo utilizadas atualmente
+**Variáveis que estão sendo utilizadas atualmente**
 |Nome do campo|tipo|Descrição|
 |-------------|----|---------|
 Id|Inteiro|Identificação do imovel 
