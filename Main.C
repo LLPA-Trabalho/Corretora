@@ -1,98 +1,188 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_CHARACTER 50
+#define MAX_NUM 10
+#include <locale.h>
+
 int main()
 {
-    int   ano_Construcao, ano_Reformado, id, modo;
-    int   condominio, construido, vendido, reformado;
-    char  vendedor[MAX_CHARACTER], cliente[MAX_CHARACTER], tipo_De_Imovel[MAX_CHARACTER], bairro[MAX_CHARACTER], rua[MAX_CHARACTER];
-    float condominio_Valor, valor;
+   setlocale(LC_ALL,"portuguese"); /* Colocando a lingua do programa em portugues para poder utilizar nos printf*/
 
-    printf("Para cadastrar um imovel\nDigite 1\n");
-    scanf("%d",&modo);
+   int i,j,modo; /* Variavel i serve como um contador para o for do modo 1, Variavel j server para a quantidade de imoves que voce deseja cadastrar no modo 1*/
+   int id[MAX_NUM];
+   char tipo_imovel[MAX_NUM][MAX_CHARACTER], bairro[MAX_NUM][MAX_CHARACTER],rua[MAX_NUM][MAX_CHARACTER];
+
+   printf("Para cadastrar um imovel\nDigite 1\n Para ver um imovel já cadastrado\nDigite 2\n Para acessar como vendedor e alterar um ímovel\nDigite 3\n");
+   scanf("%d",&modo);
     if(modo == 1){
+        printf("Digites o número de imóveis a cadastrar\n");
+        scanf("%d",&j);
+        for(i=0;i<j;i++){
+            printf("\nDigite o tipo de imovel\n Apartamento ou Casa\n");
+            fflush(stdin);
+            gets(tipo_imovel[i]);
 
-        printf("Digite o nome do vendedor\n");
-        gets(vendedor);
+            printf("\nDigite o bairro do imovel\n");
+            gets(bairro[i]);
 
-        printf("\nDigite o nome do comprador");
+            printf("\nDigite a rua do imovel\n");
 
-        gets(cliente);
+            gets(rua[i]);
 
-        printf("\nDigite o tipo de imovel\n Apartamento ou Casa");
+            printf("\nDigite o numero do imovel\n");
 
-        gets(tipo_De_Imovel);
-
-        printf("\nDigite o bairro do imovel");
-
-        gets(bairro);
-
-        printf("\nDigite a rua do imovel");
-
-        gets(rua);
-
-        printf("\nO Imovel ja foi construido ?\n 0 para sim e 1 para nao");
-
-        scanf("%d",&construido);
-
-        puts("\nA Imovel ja foi vendido ?\n 0 para sim e 1 para nao");
-
-        scanf("%d",&vendido);
-
-        puts("\nA Imovel esta em um condominio ?\n 0 para sim e 1 para nao");
-
-        scanf("%d",&condominio);
-
-        puts("\nA Imovel ja foi reformado ?\n 0 para sim e 1 para nao");
-
-        scanf("%d",&reformado);
-
-        puts("\nAno de construcao ou termino de construcao");
-
-        scanf("%d",&ano_Construcao);
-
-        if(ano_Reformado == 0){
-            puts("\nAno da reforma");
-
-            scanf("%d",&ano_Reformado);
+            scanf("%d",&id[i]);
         }
 
-        puts("\nDigite o valor do imovel");
+        for(i=0;i<j;i++){
+            printf("Novos Imoveis Cadastrados");
+            printf("\nO(a) %s\n",tipo_imovel[i]);
+            printf(" que esta localizado no bairro:%s\n",bairro[i]);
+            printf("na rua:%s\n",rua[i]);
+            printf("no numero:%d\n",id[i]);
+        }
+        }
+        if(modo == 2){
 
-        scanf("%f",&valor);
+            strcpy(tipo_imovel[0], "Casa");
+            strcpy(bairro[0] , "José das neves");
+            strcpy(rua[0] , "Flores");
+            id[0] = 4569;
 
-        if(condominio == 0){
-            puts("\nDigite o valor do condominio");
 
-            scanf("%f",&condominio_Valor);
+            strcpy(tipo_imovel[1] ,"Apartamento");
+            strcpy(bairro[1] , "Alto do Asilo");
+            strcpy(rua[1] , "Margarida Rosas");
+            id[1] = 98;
+
+
+            strcpy(tipo_imovel[2] , "Casa");
+            strcpy(bairro[2] , "Centro");
+            strcpy(rua[2] , "Acapulco");
+            id[2] = 56;
+
+
+            strcpy(tipo_imovel[3] , "Apartamento");
+            strcpy(bairro[3] , "Torre");
+            strcpy(rua[3] , "Extremo Sul");
+            id[3] = 23;
+
+
+
+        for(i=0;i<4;i++){
+            printf("Imovél %d",i+1);
+            printf("\nO(a) %s\n",tipo_imovel[i]);
+            printf(" bairro:%s\n",bairro[i]);
+            printf("rua:%s\n",rua[i]);
+            printf("numero:%d\n",id[i]);
+            }
+        }
+        if(modo == 3){
+
+            strcpy(tipo_imovel[0], "Casa");
+            strcpy(bairro[0] , "José das neves");
+            strcpy(rua[0] , "Flores");
+            id[0] = 4569;
+
+            strcpy(tipo_imovel[1] ,"Apartamento");
+            strcpy(bairro[1] , "Alto do Asilo");
+            strcpy(rua[1] , "Margarida Rosas");
+            id[1] = 98;
+
+            strcpy(tipo_imovel[2] , "Casa");
+            strcpy(bairro[2] , "Centro");
+            strcpy(rua[2] , "Acapulco");
+            id[2] = 56;
+
+            strcpy(tipo_imovel[3] , "Apartamento");
+            strcpy(bairro[3] , "Torre");
+            strcpy(rua[3] , "Extremo Sul");
+            id[3] = 23;
+
+            for(i=0;i<4;i++){
+            printf("Imovél %d",i+1);
+            printf("\nO(a) %s\n",tipo_imovel[i]);
+            printf(" bairro:%s\n",bairro[i]);
+            printf("rua:%s\n",rua[i]);
+            printf("numero:%d\n",id[i]);
+            }
+            printf("Digite o numero do imovel a qual deseja alterar");
+            scanf("%d",&j);
+            if(j==1){
+                printf("\nO(a) %s\n",tipo_imovel[0]);
+
+                fflush(stdin);
+
+                printf("\nDigite o bairro do imovel\n");
+
+                gets(bairro[0]);
+
+                printf("\nDigite a rua do imovel\n");
+
+                gets(rua[0]);
+
+                printf("\nDigite o numero do imovel\n");
+
+                scanf("%d",&id[0]);
+            }
+            if(j==2){
+                printf("\nO(a) %s\n",tipo_imovel[1]);
+
+                fflush(stdin);
+
+                printf("\nDigite o bairro do imovel\n");
+
+                gets(bairro[1]);
+
+                printf("\nDigite a rua do imovel\n");
+
+                gets(rua[1]);
+
+                printf("\nDigite o numero do imovel\n");
+
+                scanf("%d",&id[1]);
+            }
+            if(j==3){
+                printf("\nO(a) %s\n",tipo_imovel[2]);
+
+                fflush(stdin);
+
+                printf("\nDigite o bairro do imovel\n");
+
+                gets(bairro[2]);
+
+                printf("\nDigite a rua do imovel\n");
+
+                gets(rua[2]);
+
+                printf("\nDigite o numero do imovel\n");
+
+                scanf("%d",&id[2]);
+            }
+            if(j==4){
+                printf("\nO(a) %s\n",tipo_imovel[3]);
+
+                fflush(stdin);
+
+                printf("\nDigite o bairro do imovel\n");
+
+                gets(bairro[3]);
+
+                printf("\nDigite a rua do imovel\n");
+
+                gets(rua[3]);
+
+                printf("\nDigite o numero do imovel\n");
+
+                scanf("%d",&id[3]);
+            }
+            for(i=0;i<4;i++){
+            printf("\nO(a) %s\n",tipo_imovel[i]);
+            printf(" bairro:%s\n",bairro[i]);
+            printf("rua:%s\n",rua[i]);
+            printf("numero:%d\n",id[i]);
+            }
         }
 
-        if(vendido == 1){
-            printf("\nO Vendedor :%s,",vendedor);
-            printf(" ira vender para o comprador:%s ",cliente);
-            printf("\nO(a) %s,",tipo_De_Imovel);
-            printf(" que esta localizado no bairro:%s",bairro);
-            printf("na rua:%s",rua);
-            if(construido == 0){
-                 printf("\nQue foi construida no ano de %d",ano_Construcao);
-            }else{
-                 printf("\nQue tera sua construcao encerrada no ano de %d",ano_Construcao);
-            }
-            if(reformado == 0){
-                printf("\nQue foi reformado no ano de %d",ano_Reformado);
-            }
-            if(condominio == 0){
-                printf("\nQue esta localizado em um condominio");
-                printf("\nO Valor total do imovel sera de %.2f + %.2f por mes por conta do condominio",valor,condominio_Valor);
-            }else{
-                printf("\nO Valor total do imovel sera de %.2f ",valor);
-            }
-
-        }else{
-            puts("Imovel vendido");
-        }
-    }else{
-        printf("Entrada invalida");
-    }
     return 0;
 }
