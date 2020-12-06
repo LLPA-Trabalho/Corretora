@@ -2,7 +2,7 @@
 Nosso trabalho tem a função de ser um sistema para uma corretora de imóveis, aonde conseguiremos armazenar quem vendeu, e quem comprou e outras informações
 
 
-**Atualmente Sendo usados
+# Variáveis que estão sendo utilizadas atualmente
 |Nome do campo|tipo|Descrição|
 |-------------|----|---------|
 Id|Inteiro|Identificação do imovel 
@@ -11,7 +11,7 @@ Bairro  |Cadeia de caracteres|Bairro do imóvel
 Rua|Cadeia de caracteres|A rua do imóvel
 
 
-Serao usadas em versoes futuras
+Serão usadas em versões futuras
 |Nome do campo|tipo|Descrição|
 |-------------|----|---------|
 Condominio|Booleano|Caso o imóvel esteja em um condominio
