@@ -12,6 +12,8 @@ Tipo_De_Imovel|Cadeia de caracteres|Tipo de imóvel
 Condominio|Booleano|Caso o imóvel esteja em um condominio
 Construido|Booleano|Se o imóvel foi ou não construida
 Vendido|Booleano|Campo para armazenar para ver se o imóvel ja foi vendido
+Comprado_Por|Cadeia de caracteres|Por quem o imóvel foi comprado
+Vendido_Por|Cadeia de caracteres|Por quem o imóvel foi vendido
 Ano_Contrucao|Inteiro|Ano que o imóvel foi construida ou tera sua construcão terminada
 Reformado|Booleano|Se o imóvel foi ou nao reformada
 Ano_Reformado|Inteiro|Ano que o imóvel foi reformada 
