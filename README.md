@@ -2,15 +2,18 @@
 Nosso trabalho tem a função de ser um sistema para uma corretora de imóveis, aonde conseguiremos armazenar quem vendeu, e quem comprou e outras informações
 
 
-Atualmente Sendo usados
+**Atualmente Sendo usados
 |Nome do campo|tipo|Descrição|
 |-------------|----|---------|
-
 Id|Inteiro|Identificação do imovel 
 Tipo_De_Imovel|Cadeia de caracteres|Tipo de imóvel
 Bairro  |Cadeia de caracteres|Bairro do imóvel
 Rua|Cadeia de caracteres|A rua do imóvel
+
+
 Serao usadas em versoes futuras
+|Nome do campo|tipo|Descrição|
+|-------------|----|---------|
 Condominio|Booleano|Caso o imóvel esteja em um condominio
 Construido|Booleano|Se o imóvel foi ou não construida
 Vendido|Booleano|Campo para armazenar para ver se o imóvel ja foi vendido
