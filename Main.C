@@ -74,7 +74,7 @@ int main()
         for(i=0;i<4;i++){/* 4 eo numeros Cadastrado para a utilizacao do modo 2*/
             printf("Imovél %d",i+1);
             printf("\nO(a) %s\n",Tipo_De_Imovel[i]);
-            printf(" Bairro:%s\n",Bairro[i]);
+            printf("Bairro:%s\n",Bairro[i]);
             printf("Rua:%s\n",Rua[i]);
             printf("numero:%d\n",Id[i]);
         }
@@ -104,7 +104,7 @@ int main()
         for(i=0;i<4;i++){
             printf("Imovél %d",i+1);
             printf("\nO(a) %s\n",Tipo_De_Imovel[i]);
-            printf(" Bairro:%s\n",Bairro[i]);
+            printf("Bairro:%s\n",Bairro[i]);
             printf("Rua:%s\n",Rua[i]);
             printf("numero:%d\n",Id[i]);
         }
@@ -182,7 +182,7 @@ int main()
         }
         for(i=0;i<4;i++){
             printf("\nO(a) %s\n",Tipo_De_Imovel[i]);
-            printf(" Bairro:%s\n",Bairro[i]);
+            printf("Bairro:%s\n",Bairro[i]);
             printf("Rua:%s\n",Rua[i]);
             printf("numero:%d\n",Id[i]);
         }
