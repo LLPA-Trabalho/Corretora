@@ -12,7 +12,7 @@ int main()
     int Id[MAX_NUM];
     char Tipo_De_Imovel[MAX_NUM][MAX_CHARACTER], Bairro[MAX_NUM][MAX_CHARACTER],Rua[MAX_NUM][MAX_CHARACTER];
 
-    printf("Para cadastrar um imovel\nDigite 1\n Para ver um imovel já cadastrado\nDigite 2\n Para acessar como vendedor e alterar um ímovel\nDigite 3\n");
+    printf("Para cadastrar um imovel\nDigite 1\nPara ver um imovel já cadastrado\nDigite 2\nPara acessar como vendedor e alterar um ímovel\nDigite 3\n");
     scanf("%d",&modo);/*Selecionar o modo*/
 
     if(modo == 1){/*Condicional para selecionar o modo de uso*/
@@ -39,7 +39,7 @@ int main()
         for(i=0;i<j;i++){
             printf("Novos Imoveis Cadastrados");
             printf("\nO(a) %s\n",Tipo_De_Imovel[i]);
-            printf(" que esta localizado no Bairro:%s\n",Bairro[i]);
+            printf("que esta localizado no Bairro:%s\n",Bairro[i]);
             printf("na Rua:%s\n",Rua[i]);
             printf("no numero:%d\n",Id[i]);
         }
